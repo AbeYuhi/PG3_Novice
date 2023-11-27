@@ -117,9 +117,12 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
     <ClCompile Include="GameClearScene.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="ICommand.cpp" />
     <ClCompile Include="InGameScene.cpp" />
+    <ClCompile Include="InputHander.cpp" />
     <ClCompile Include="IScene.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,8 +155,11 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
     <ClInclude Include="GameClearScene.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="ICommand.h" />
     <ClInclude Include="InGameScene.h" />
+    <ClInclude Include="InputHander.h" />
     <ClInclude Include="IScene.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

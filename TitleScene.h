@@ -6,7 +6,7 @@ class TitleScene : public IScene {
 public:
 	void Initialize() override;
 
-	void Updata(const char* keys, const char* preKeys) override;
+	void Updata() override;
 
 	void Draw() override;
 

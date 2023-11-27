@@ -23,6 +23,18 @@
     <Filter Include="Scenes">
       <UniqueIdentifier>{3ad7102b-65aa-4b51-ab3c-2e95baade8de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{b5544559-ed36-4af7-bd38-92cda2655d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Player">
+      <UniqueIdentifier>{9ac05dc3-9ca0-4ab5-8202-e82311e6025a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Player\Command">
+      <UniqueIdentifier>{6b90e960-3b96-45cd-9f03-b5fd37ce9cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Player\InputHander">
+      <UniqueIdentifier>{757de6fb-f370-40bd-8917-3ca222ee2af7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -37,7 +49,6 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\WinApp.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
       <Filter>KamataEngine\Adapter</Filter>
     </ClCompile>
@@ -61,6 +72,16 @@
     </ClCompile>
     <ClCompile Include="GameClearScene.cpp">
       <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entity\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ICommand.cpp">
+      <Filter>Entity\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="InputHander.cpp">
+      <Filter>Entity\Player\InputHander</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +170,15 @@
     </ClInclude>
     <ClInclude Include="GameClearScene.h">
       <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommand.h">
+      <Filter>Entity\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHander.h">
+      <Filter>Entity\Player\InputHander</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

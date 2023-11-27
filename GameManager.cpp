@@ -10,7 +10,8 @@ void GameManager::Initialize() {
 	sceneArr_[INGAME] = std::make_unique<InGameScene>();
 	sceneArr_[CLEAR] = std::make_unique<GameClearScene>();
 
-	currentSceneNo_ = TITLE;
+	currentSceneNo_ = INGAME;
+	sceneArr_[currentSceneNo_]->Initialize();
 }
 
 int GameManager::Run() { // ウィンドウの×ボタンが押されるまでループ
@@ -28,7 +29,7 @@ int GameManager::Run() { // ウィンドウの×ボタンが押されるまで�
 		}
 
 		//更新処理
-		sceneArr_[currentSceneNo_]->Updata(keys, preKeys);
+		sceneArr_[currentSceneNo_]->Updata();
 
 		//描画処理
 		sceneArr_[currentSceneNo_]->Draw();

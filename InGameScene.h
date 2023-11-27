@@ -1,5 +1,8 @@
 #pragma once
 #include "IScene.h"
+#include "Player.h"
+#include "ICommand.h"
+#include "InputHander.h"
 #include <Novice.h>
 #include "Vector2.h"
 #include <math.h>
@@ -13,12 +16,12 @@ class InGameScene : public IScene {
 public:
 	void Initialize() override;
 
-	void Updata(const char* keys, const char* preKeys) override;
+	void Updata() override;
 
 	void Draw() override;
 
 private:
-	Vector2 enemyPos_;
-	Vector2 playerPos_;
-	Bullet playerBullets[100];
+	InputHander* inputHandler_ = nullptr;
+	ICommand* command_ = nullptr;
+	Player* player_ = nullptr;
 };

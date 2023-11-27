@@ -11,7 +11,7 @@ protected:
 public:
 	
 	virtual void Initialize() = 0;
-	virtual void Updata(const char* keys, const char* preKeys) = 0;
+	virtual void Updata() = 0;
 	virtual void Draw() = 0;
 
 	virtual ~IScene();

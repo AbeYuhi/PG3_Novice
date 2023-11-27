@@ -1,14 +1,12 @@
 #include "GameClearScene.h"
 
 void GameClearScene::Initialize() {
+	sceneNo = CLEAR;
+
 	cooldown_ = 10;
 }
 
-void GameClearScene::Updata(const char* keys, const char* preKeys) {
-	if (keys[DIK_SPACE] && !preKeys[DIK_SPACE] && cooldown_ <= 0) {
-		sceneNo = TITLE;
-	}
-	cooldown_--;
+void GameClearScene::Updata() {
 }
 
 void GameClearScene::Draw() {
